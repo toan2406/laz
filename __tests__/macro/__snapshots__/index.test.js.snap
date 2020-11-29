@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`unknown plugin 1. unknown plugin: 1. unknown plugin 1`] = `
+
+import { thunk } from '../../src/macro';
+
+thunk(1);
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+() => 1;
+
+
+`;
