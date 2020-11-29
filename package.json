@@ -1,6 +1,6 @@
 {
   "name": "laz",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "scripts": {
     "build": "babel src -d ./ --ignore *.test.js",
