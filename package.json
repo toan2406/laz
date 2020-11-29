@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "build": "babel src -d ./ --ignore *.test.js",
-    "test": "jest"
+    "test": "jest",
+    "publish-package": "yarn build && npm publish"
   },
   "author": "",
   "license": "ISC",
