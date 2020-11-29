@@ -16,7 +16,7 @@ Laz is an attempt to bring lazy evaluation into Javascript using macros.
 - Install dependencies
 
 ```shell
-yarn add babel-plugin-macros laz -D
+yarn add babel-plugin-macros lazjs -D
 ```
 
 - In your Babel config
