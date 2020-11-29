@@ -1,14 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`unknown plugin 1. unknown plugin: 1. unknown plugin 1`] = `
+exports[`laz macros Stream > array literal > transform to stream structure: Stream > array literal > transform to stream structure 1`] = `
 
-import { thunk } from '../../src/macro';
+import { stream } from '../../src/macro';
 
-thunk(1);
+const stream1 = stream([1, 2, 3]);
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-() => 1;
+const stream1 = [() => 1, () => [() => 2, () => [() => 3, () => []]]];
+
+
+`;
+
+exports[`laz macros Thunk > any expression > wrap in a thunk: Thunk > any expression > wrap in a thunk 1`] = `
+
+import { thunk } from '../../src/macro';
+
+const lazy1 = thunk(1);
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+const lazy1 = () => 1;
 
 
 `;
